@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>박유림 — 웹 명함</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-pattern" aria-hidden="true"></div>
+
+  <main class="card-wrap">
+    <article class="card" id="card">
+      <div class="card__glow" aria-hidden="true"></div>
+
+      <header class="card__header">
+        <div class="avatar" role="img" aria-label="펭귄 캐릭터 프로필 이미지">
+          <svg class="penguin-face" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <defs>
+              <linearGradient id="pgBody" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" stop-color="#2d3142" />
+                <stop offset="100%" stop-color="#1a1d28" />
+              </linearGradient>
+              <linearGradient id="pgBelly" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" stop-color="#f8f9fc" />
+                <stop offset="100%" stop-color="#e8ecf4" />
+              </linearGradient>
+            </defs>
+            <!-- 발 -->
+            <ellipse cx="78" cy="178" rx="18" ry="10" fill="#e85d04" />
+            <ellipse cx="122" cy="178" rx="18" ry="10" fill="#e85d04" />
+            <!-- 몸 뒤 -->
+            <ellipse cx="100" cy="128" rx="58" ry="62" fill="url(#pgBody)" />
+            <!-- 배 흰색 -->
+            <ellipse cx="100" cy="132" rx="38" ry="48" fill="url(#pgBelly)" />
+            <!-- 왼쪽 날개 -->
+            <path d="M48 118 Q32 138 44 158 Q52 145 58 128 Z" fill="#252836" />
+            <!-- 오른쪽 날개 -->
+            <path d="M152 118 Q168 138 156 158 Q148 145 142 128 Z" fill="#252836" />
+            <!-- 머리 -->
+            <ellipse cx="100" cy="78" rx="48" ry="44" fill="url(#pgBody)" />
+            <!-- 눈 흰자 -->
+            <ellipse cx="82" cy="72" rx="16" ry="18" fill="#fff" />
+            <ellipse cx="118" cy="72" rx="16" ry="18" fill="#fff" />
+            <!-- 눈동자 -->
+            <circle cx="84" cy="74" r="9" fill="#1a1d28" />
+            <circle cx="116" cy="74" r="9" fill="#1a1d28" />
+            <circle cx="86" cy="71" r="3" fill="#fff" />
+            <circle cx="118" cy="71" r="3" fill="#fff" />
+            <!-- 볼 -->
+            <ellipse cx="64" cy="88" rx="10" ry="7" fill="rgba(255,150,150,0.35)" />
+            <ellipse cx="136" cy="88" rx="10" ry="7" fill="rgba(255,150,150,0.35)" />
+            <!-- 부리 -->
+            <path d="M100 88 L88 102 L112 102 Z" fill="#ff9f1c" />
+            <path d="M100 102 L94 112 L106 112 Z" fill="#f48c06" />
+          </svg>
+        </div>
+        <h1 class="name">박유림</h1>
+        <p class="role">코리아엑스퍼트 대표</p>
+      </header>
+
+      <p class="tagline">AI로 바이브코딩중입니다</p>
+
+      <ul class="contacts">
+        <li>
+          <a
+            class="contact-link"
+            href="mailto:yr@kei.co.kr"
+            data-copy="yr@kei.co.kr"
+            title="클릭: 메일 · 더블클릭: 복사"
+          >
+            <span class="contact-icon" aria-hidden="true">✉</span>
+            <span>yr@kei.co.kr</span>
+          </a>
+        </li>
+        <li>
+          <a
+            class="contact-link contact-link--linkedin"
+            href="https://www.linedin.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-copy="https://www.linedin.com/"
+            title="새 탭에서 열기 · 더블클릭: URL 복사"
+          >
+            <span class="contact-icon contact-icon--in" aria-hidden="true">in</span>
+            <span>LinkedIn</span>
+          </a>
+        </li>
+        <li>
+          <a
+            class="contact-link contact-link--youtube"
+            href="https://www.youtube.com/@ai-study"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-copy="https://www.youtube.com/@ai-study"
+            title="새 탭에서 유튜브 · 더블클릭: URL 복사"
+          >
+            <span class="contact-icon contact-icon--yt" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+              </svg>
+            </span>
+            <span>YouTube</span>
+          </a>
+        </li>
+      </ul>
+
+      <p class="toast" id="toast" role="status" aria-live="polite"></p>
+    </article>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
